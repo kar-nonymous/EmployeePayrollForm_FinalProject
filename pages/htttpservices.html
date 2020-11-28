@@ -35,7 +35,7 @@
         });
 
       const deleteElem = document.querySelector("#delete_services");
-      const deleteURL = " http://localhost:3000/EmployeePayrollDB/2";
+      const deleteURL = " http://localhost:3000/EmployeePayrollDB/5";
       makeServiceCall("DELETE", deleteURL, false)
         .then(responseText => {
           deleteElem.textContent = "Delete Data: "+responseText;
@@ -47,7 +47,7 @@
       const postElem = document.querySelector("#post_services");
       const postURL = " http://localhost:3000/EmployeePayrollDB";
       const emplData = {
-      "_name": "Kumar",
+      "_name": "Kartikeya1",
       "_gender": "male",
       "_department": [
         "Finance"
@@ -56,7 +56,7 @@
       "_startDate": "29 Aug 2019",
       "_note": "",
       "_profilePic": "../assets/profile -2.png",
-      "id": 4
+      "id": 7
     }
       makeServiceCall("POST", postURL, false, emplData)
         .then(responseText => {
